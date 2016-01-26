@@ -75,9 +75,6 @@
             </div>
             </div>
         </div>
-        <!--<div class='outer'>
-        <img id='snowicon' src='snowflake_icon.png'/>
-        </div>-->
     </div>
 
     <div id='display'>
@@ -88,19 +85,6 @@
     <script>
 		$(document).ready(function(){
 
-                
-            /*var snowIcon = 0;
-
-            function moveSnowIcon(width) {
-                if (width < 480) {
-                    $('.outer').prepend("<img id='snowicon' src='snowflake_icon.png' />");
-                } else if (width < 1024 ) {
-                    $('#display').prepend("<img id='snowicon' src='snowflake_icon.png' />")
-                }
-            }            
-
-            $(window).on('resize', moveSnowIcon);
-            */
 			$('#displayWhistlerInfo').hide();
 			$('#displayGrouseInfo').hide();
 			$('#displaySeymourInfo').hide();
@@ -327,35 +311,6 @@
 				$('#displayCypressInfo').show();
             	$('#displayCypressInfo').html("<img src='images/info/img9000cm.png'>")
             });
-
-            /*$('.outer').mousedown(function(e){
-                $(".outer").append("<img id='icon' src='refresh_wtext.png' />");
-                clearTimeout(this.downTimer);
-                this.downTimer = setTimeout(function() {
-                    $("#icon").remove();
-                    $('.outer').append("<img id='icon2' src='release.png' />");
-                }, 2000);
-                //$("#icon").remove();
-                //$("#icon").css("left", e.pageX);
-                //$("#icon").css("top", e.pageY);
-            });
-            $(".outer").mouseup(function(e){
-                //$("#icon").remove();
-                $("#icon2").remove();
-                clearTimeout(this.downTimer);
-                $(".info24").html("24Hr: 29 CM of snow")
-                $(".info48").html("48Hr: 37 CM of snow")
-                $(".info7").html("7Days: 104 CM of snow")
-                $(".infob").html("Base: 64 CM of snow")
-                $(".infoe").html("Expect: Over 9004 CM of snow")
-            });
-            
-            $("#icon").mouseup(function(e){
-                $("#icon").remove();
-            });
-            $("#icon2").mouseup(function(e){
-                $(".info").html("Updated information!")
-            });*/
             
 		});
 	</script>
