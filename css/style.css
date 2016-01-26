@@ -26,7 +26,7 @@
 		    }
 
 		    #logo {
-		    	content: url('images/logo_head.png');
+		    	content: url('../images/logo_head.png');
 		    	height: 150px;
 		    	margin-top: -25px;
 		    	cursor: pointer;
@@ -117,7 +117,7 @@
 			}
 			
 			#toggleWhistler {
-				background-image:url(images/inukshuk_gray.png);
+				background-image:url(../images/inukshuk_gray.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;
   				overflow: hidden;	
@@ -125,46 +125,46 @@
 
 			#whistlerActive {
 				display:none;
-				background-image:url(images/inukshuk_active.png);
+				background-image:url(../images/inukshuk_active.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}
 
 			#toggleGrouse {
-				background-image:url(images/grouse_gray.png);
+				background-image:url(../images/grouse_gray.png);
 				background-position: bottom left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#grouseActive {
 				display:none;
-				background-image:url(images/grouse_active.png);
+				background-image:url(../images/grouse_active.png);
 				background-position: bottom left, 0px 0px;
   				background-origin: border-box;					
 			}			
 
 			#toggleSeymour {
-				background-image:url(images/seymour_gray.png);
+				background-image:url(../images/seymour_gray.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#seymourActive {
 				display:none;
-				background-image:url(images/seymour_active.png);
+				background-image:url(../images/seymour_active.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}			
 
 			#toggleCypress {
-				background-image:url(images/cypress_gray.png);
+				background-image:url(../images/cypress_gray.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#cypressActive {
 				display:none;
-				background-image:url(images/cypress_active.png);
+				background-image:url(../images/cypress_active.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}
@@ -326,7 +326,7 @@
 				text-shadow: -2px 2px #090F93;			}
 
 			#toggleWhistler {
-				background-image:url(images/inukshuk_gray.png);
+				background-image:url(../images/inukshuk_gray.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;
   				overflow: hidden;	
@@ -334,46 +334,46 @@
 
 			#whistlerActive {
 				display:none;
-				background-image:url(images/inukshuk_active.png);
+				background-image:url(../images/inukshuk_active.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}
 
 			#toggleGrouse {
-				background-image:url(images/grouse_gray.png);
+				background-image:url(../images/grouse_gray.png);
 				background-position: bottom left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#grouseActive {
 				display:none;
-				background-image:url(images/grouse_active.png);
+				background-image:url(../images/grouse_active.png);
 				background-position: bottom left, 0px 0px;
   				background-origin: border-box;					
 			}			
 
 			#toggleSeymour {
-				background-image:url(images/seymour_gray.png);
+				background-image:url(../images/seymour_gray.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#seymourActive {
 				display:none;
-				background-image:url(images/seymour_active.png);
+				background-image:url(../images/seymour_active.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}			
 
 			#toggleCypress {
-				background-image:url(images/cypress_gray.png);
+				background-image:url(../images/cypress_gray.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#cypressActive {
 				display:none;
-				background-image:url(images/cypress_active.png);
+				background-image:url(../images/cypress_active.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}
@@ -567,7 +567,7 @@
 			}
 
 			#toggleWhistler {
-				background-image:url(images/inukshuk_gray_dt.png);
+				background-image:url(../images/inukshuk_gray_dt.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;
   				overflow: hidden;	
@@ -575,46 +575,46 @@
 
 			#whistlerActive {
 				display:none;
-				background-image:url(images/inukshuk_active_dt.png);
+				background-image:url(../images/inukshuk_active_dt.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}
 
 			#toggleGrouse {
-				background-image:url(images/grouse_gray_dt.png);
+				background-image:url(../images/grouse_gray_dt.png);
 				background-position: bottom left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#grouseActive {
 				display:none;
-				background-image:url(images/grouse_active_dt.png);
+				background-image:url(../images/grouse_active_dt.png);
 				background-position: bottom left, 0px 0px;
   				background-origin: border-box;					
 			}			
 
 			#toggleSeymour {
-				background-image:url(images/seymour_gray_dt.png);
+				background-image:url(../images/seymour_gray_dt.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#seymourActive {
 				display:none;
-				background-image:url(images/seymour_active_dt.png);
+				background-image:url(../images/seymour_active_dt.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}			
 
 			#toggleCypress {
-				background-image:url(images/cypress_gray_dt.png);
+				background-image:url(../images/cypress_gray_dt.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;	
 			}
 
 			#cypressActive {
 				display:none;
-				background-image:url(images/cypress_active_dt.png);
+				background-image:url(../images/cypress_active_dt.png);
 				background-position: top left, 0px 0px;
   				background-origin: border-box;					
 			}
