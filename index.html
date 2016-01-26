@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Snomen | Snow Reports</title>
+<link rel="stylesheet" media="all" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class='header'>
+        <img id='logo' src='images/logo.png' onclick='location.reload();' value='Refresh Page'>
+    </div>
+	<div id='nav'>
+        <div id='butlistTop'>        
+        	<div id='butlistW'>
+            <input id="toggleWhistler" class='mountains' type="button" />
+            <input id='whistlerActive' class='mountains' type='button' />
+        	<ul id='ul1'>
+                <img class='icon' id='iW24' src='images/icons/24white.png'>
+                <img class='icon' id='iW48' src='images/icons/48white.png'>
+                <img class='icon' id='iW7' src='images/icons/7white.png'>
+                <img class='icon' id='iWB' src='images/icons/rulerwhite.png'>
+                <img class='icon' id='iWE' src='images/icons/expectwhite.png'>
+            </ul>
+            <div class='infoTainer' id='displayWhistlerInfo'>
+            </div>
+            </div>
+        </div>
+            
+        <div id='butlistTop'>
+            <div id='butlistG'>
+            <input id="toggleGrouse" class='mountains' type="button" />
+            <input id='grouseActive' class='mountains' type='button' />
+        	<ul id='ul2'>
+                <img class='icon' id='iG24' src='images/icons/24white.png'>
+                <img class='icon' id='iG48' src='images/icons/48white.png'>
+                <img class='icon' id='iG7' src='images/icons/7white.png'>
+                <img class='icon' id='iGB' src='images/icons/rulerwhite.png'>
+                <img class='icon' id='iGE' src='images/icons/expectwhite.png'>
+            </ul>
+            <div class='infoTainer' id='displayGrouseInfo'>
+            </div>
+            </div>
+        </div>
+
+        <div id='butlistBot'>
+            <div id='butlistS'>
+            <input id="toggleSeymour" class='mountains' type="button" />
+            <input id='seymourActive' class='mountains' type='button' />
+        	<ul id='ul3'>
+                <img class='icon' id='iS24' src='images/icons/24white.png'>
+                <img class='icon' id='iS48' src='images/icons/48white.png'>
+                <img class='icon' id='iS7' src='images/icons/7white.png'>
+                <img class='icon' id='iSB' src='images/icons/rulerwhite.png'>
+                <img class='icon' id='iSE' src='images/icons/expectwhite.png'>
+            </ul>
+            <div class='infoTainer' id='displaySeymourInfo'>
+            </div>
+            </div>
+        </div>
+
+            <div id='butlistBot'>
+            <div id='butlistC'>
+            <input id="toggleCypress" class='mountains' type="button" />
+            <input id='cypressActive' class='mountains' type='button' />
+        	<ul id='ul4'>
+                <img class='icon' id='iC24' src='images/icons/24white.png'>
+                <img class='icon' id='iC48' src='images/icons/48white.png'>
+                <img class='icon' id='iC7' src='images/icons/7white.png'>
+                <img class='icon' id='iCB' src='images/icons/rulerwhite.png'>
+                <img class='icon' id='iCE' src='images/icons/expectwhite.png'>
+            </ul>  
+            <div class='infoTainer' id='displayCypressInfo'>
+            </div>
+            </div>
+        </div>
+        <!--<div class='outer'>
+        <img id='snowicon' src='snowflake_icon.png'/>
+        </div>-->
+    </div>
+
+    <div id='display'>
+
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+
+            /*    
+            var snowIcon = 0;
+
+            function moveSnowIcon(width) {
+                if (width < 480) {
+                    $('.outer').prepend("<img id='snowicon' src='snowflake_icon.png' />");
+                } else if (width < 1024 ) {
+                    $('#display').prepend("<img id='snowicon' src='snowflake_icon.png' />")
+                }
+            }            
+
+            $(window).on('resize', moveSnowIcon);
+            */
+			$('#displayWhistlerInfo').hide();
+			$('#displayGrouseInfo').hide();
+			$('#displaySeymourInfo').hide();
+			$('#displayCypressInfo').hide();
+
+			$("#toggleWhistler").click(function(){
+              $("#ul1").slideToggle(200);
+			  $('#ul2').slideUp(200);
+			  $('#ul3').slideUp(200);
+			  $('#ul4').slideUp(200);
+			  $('#displayWhistlerInfo').hide();
+			  $('#displayGrouseInfo').hide();
+			  $('#displaySeymourInfo').hide();
+			  $('#displayCypressInfo').hide();
+
+              $('#whistlerActive').css('display','inline');
+              $('#toggleWhistler').hide();
+              $('#toggleGrouse').css('display','inline'); 
+              $('#grouseActive').hide();
+              $('#seymourActive').hide();
+              $('#toggleSeymour').css('display','inline'); 
+              $('#cypressActive').hide();  
+              $('#toggleCypress').css('display','inline'); 
+			});
+
+            $('#whistlerActive').click(function(){
+              $("#ul1").slideUp(200);
+              $('#ul2').slideUp(200);
+              $('#ul3').slideUp(200);
+              $('#ul4').slideUp(200);
+              $('#displayWhistlerInfo').hide();
+              $('#displayGrouseInfo').hide();
+              $('#displaySeymourInfo').hide();
+              $('#displayCypressInfo').hide();
+
+              $('#toggleWhistler').css('display','inline');
+              $('#whistlerActive').hide();                          
+                      
+            });			
+			
+			$("#toggleGrouse").click(function(){
+              $("#ul2").slideToggle(200);
+			  $('#ul1').slideUp(200);
+			  $('#ul3').slideUp(200);
+			  $('#ul4').slideUp(200);
+			  $('#displayWhistlerInfo').hide();
+			  $('#displayGrouseInfo').hide();
+			  $('#displaySeymourInfo').hide();
+			  $('#displayCypressInfo').hide();
+
+              $('#whistlerActive').hide();
+              $('#toggleWhistler').css('display','inline');
+              $('#toggleGrouse').hide(); 
+              $('#grouseActive').css('display','inline');
+              $('#seymourActive').hide();
+              $('#toggleSeymour').css('display','inline'); 
+              $('#cypressActive').hide();  
+              $('#toggleCypress').css('display','inline'); 
+			});		
+
+            $('#grouseActive').click(function(){
+              $("#ul1").slideUp(200);
+              $('#ul2').slideUp(200);
+              $('#ul3').slideUp(200);
+              $('#ul4').slideUp(200);
+              $('#displayWhistlerInfo').hide();
+              $('#displayGrouseInfo').hide();
+              $('#displaySeymourInfo').hide();
+              $('#displayCypressInfo').hide();
+
+              $('#toggleGrouse').css('display','inline');
+              $('#grouseActive').hide();                          
+            });                   
+
+			$("#toggleSeymour").click(function(){
+              $("#ul3").slideToggle(200);
+			  $('#ul1').slideUp(200);
+			  $('#ul2').slideUp(200);
+			  $('#ul4').slideUp(200);
+			  $('#displayWhistlerInfo').hide();
+			  $('#displayGrouseInfo').hide();
+			  $('#displaySeymourInfo').hide();
+			  $('#displayCypressInfo').hide();
+
+              $('#whistlerActive').hide();
+              $('#toggleWhistler').css('display','inline');
+              $('#toggleGrouse').css('display','inline'); 
+              $('#grouseActive').hide();
+              $('#seymourActive').css('display','inline');
+              $('#toggleSeymour').hide(); 
+              $('#cypressActive').hide();  
+              $('#toggleCypress').css('display','inline'); 
+			});
+
+            $('#seymourActive').click(function(){
+              $("#ul1").slideUp(200);
+              $('#ul2').slideUp(200);
+              $('#ul3').slideUp(200);
+              $('#ul4').slideUp(200);
+              $('#displayWhistlerInfo').hide();
+              $('#displayGrouseInfo').hide();
+              $('#displaySeymourInfo').hide();
+              $('#displayCypressInfo').hide();
+
+              $('#toggleSeymour').css('display','inline');
+              $('#seymourActive').hide();                          
+            });
+
+			$("#toggleCypress").click(function(){
+              $("#ul4").slideToggle(200);
+			  $('#ul2').slideUp(200);
+			  $('#ul3').slideUp(200);
+			  $('#ul1').slideUp(200);
+			  $('#displayWhistlerInfo').hide();
+			  $('#displayGrouseInfo').hide();
+			  $('#displaySeymourInfo').hide();
+			  $('#displayCypressInfo').hide();
+
+              $('#whistlerActive').hide();
+              $('#toggleWhistler').css('display','inline');
+              $('#toggleGrouse').css('display','inline'); 
+              $('#grouseActive').hide();
+              $('#seymourActive').hide();
+              $('#toggleSeymour').css('display','inline'); 
+              $('#cypressActive').css('display','inline');  
+              $('#toggleCypress').hide(); 
+			});
+
+            $('#cypressActive').click(function(){
+              $("#ul1").slideUp(200);
+              $('#ul2').slideUp(200);
+              $('#ul3').slideUp(200);
+              $('#ul4').slideUp(200);
+              $('#displayWhistlerInfo').hide();
+              $('#displayGrouseInfo').hide();
+              $('#displaySeymourInfo').hide();
+              $('#displayCypressInfo').hide();
+
+              $('#toggleCypress').css('display','inline');
+              $('#cypressActive').hide();                          
+            });
+
+            //Whistler updates
+            $('#iW24').click(function(){
+				$('#displayWhistlerInfo').show();		
+            	$('#displayWhistlerInfo').html("<img src='images/info/img25cm.png'>")
+            });
+            $('#iW48').click(function(){
+				$('#displayWhistlerInfo').show();		
+            	$('#displayWhistlerInfo').html("<img src='images/info/img33cm.png'>")
+            });
+            $('#iW7').click(function(){
+				$('#displayWhistlerInfo').show();
+            	$('#displayWhistlerInfo').html("<img src='images/info/img60cm.png'>")
+            });
+            $('#iWB').click(function(){
+				$('#displayWhistlerInfo').show();
+            	$('#displayWhistlerInfo').html("<img src='images/info/img100cm.png'>")
+            });
+            $('#iWE').click(function(){
+				$('#displayWhistlerInfo').show();
+            	$('#displayWhistlerInfo').html("<img src='images/info/img9000cm.png'>")
+            });
+            //Grouse updates
+            $('#iG24').click(function(){
+				$('#displayGrouseInfo').show();		
+            	$('#displayGrouseInfo').html("<img src='images/info/img25cm.png'>")
+            });
+            $('#iG48').click(function(){
+				$('#displayGrouseInfo').show();		
+            	$('#displayGrouseInfo').html("<img src='images/info/img33cm.png'>")
+            });
+            $('#iG7').click(function(){
+				$('#displayGrouseInfo').show();
+            	$('#displayGrouseInfo').html("<img src='images/info/img60cm.png'>")
+            });
+            $('#iGB').click(function(){
+				$('#displayGrouseInfo').show();
+            	$('#displayGrouseInfo').html("<img src='images/info/img100cm.png'>")
+            });
+            $('#iGE').click(function(){
+				$('#displayGrouseInfo').show();
+            	$('#displayGrouseInfo').html("<img src='images/info/img9000cm.png'>")
+            });
+            //Seymour updates
+            $('#iS24').click(function(){
+				$('#displaySeymourInfo').show();		
+            	$('#displaySeymourInfo').html("<img src='images/info/img25cm.png'>")
+            });
+            $('#iS48').click(function(){
+				$('#displaySeymourInfo').show();		
+            	$('#displaySeymourInfo').html("<img src='images/info/img33cm.png'>")
+            });
+            $('#iS7').click(function(){
+				$('#displaySeymourInfo').show();
+            	$('#displaySeymourInfo').html("<img src='images/info/img60cm.png'>")
+            });
+            $('#iSB').click(function(){
+				$('#displaySeymourInfo').show();
+            	$('#displaySeymourInfo').html("<img src='images/info/img100cm.png'>")
+            });
+            $('#iSE').click(function(){
+				$('#displaySeymourInfo').show();
+            	$('#displaySeymourInfo').html("<img src='images/info/img9000cm.png'>")
+            });
+            //Cypress updates
+            $('#iC24').click(function(){
+				$('#displayCypressInfo').show();		
+            	$('#displayCypressInfo').html("<img src='images/info/img25cm.png'>")
+            });
+            $('#iC48').click(function(){
+				$('#displayCypressInfo').show();		
+            	$('#displayCypressInfo').html("<img src='images/info/img33cm.png'>")
+            });
+            $('#iC7').click(function(){
+				$('#displayCypressInfo').show();
+            	$('#displayCypressInfo').html("<img src='images/info/img60cm.png'>")
+            });
+            $('#iCB').click(function(){
+				$('#displayCypressInfo').show();
+            	$('#displayCypressInfo').html("<img src='images/info/img100cm.png'>")
+            });
+            $('#iCE').click(function(){
+				$('#displayCypressInfo').show();
+            	$('#displayCypressInfo').html("<img src='images/info/img9000cm.png'>")
+            });
+
+            /*$('.outer').mousedown(function(e){
+                $(".outer").append("<img id='icon' src='refresh_wtext.png' />");
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function() {
+                    $("#icon").remove();
+                    $('.outer').append("<img id='icon2' src='release.png' />");
+                }, 2000);
+                //$("#icon").remove();
+                //$("#icon").css("left", e.pageX);
+                //$("#icon").css("top", e.pageY);
+            });
+            $(".outer").mouseup(function(e){
+                //$("#icon").remove();
+                $("#icon2").remove();
+                clearTimeout(this.downTimer);
+                $(".info24").html("24Hr: 29 CM of snow")
+                $(".info48").html("48Hr: 37 CM of snow")
+                $(".info7").html("7Days: 104 CM of snow")
+                $(".infob").html("Base: 64 CM of snow")
+                $(".infoe").html("Expect: Over 9004 CM of snow")
+            });
+            
+            $("#icon").mouseup(function(e){
+                $("#icon").remove();
+            });
+            $("#icon2").mouseup(function(e){
+                $(".info").html("Updated information!")
+            });
+            */
+		});
+	</script>
+
+</body>
+</html>
